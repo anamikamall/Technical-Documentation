@@ -1,0 +1,169 @@
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.5;;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    /* justify-content: center; */
+    width: 290px;
+    height:100%;
+    border-right: 2px solid #99A2A2;
+    /* overflow-y: auto;
+    overflow-x: hidden; */
+    /* margin-left: 15px; */
+}
+nav header {
+    padding: 15px 0 10px 0;
+    text-align: center;
+    /* align-items: center;
+    justify-content: center; */
+    font-size: 1.8em;
+    position: fixed;
+    top: 0; 
+    width: 275px;
+    /* height: 35px; */
+    background-color: #FFFFFF;
+}
+nav > section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 4em;
+    overflow-y: auto; 
+    overflow-x: hidden;
+    /* align-items: center; */
+  /* height: 100%; */
+}
+.scroll {
+    border-top: 1px solid black;
+    height: 35px;
+    padding: 13px 0 13px 0;
+    /* position: relative; */
+}
+#link {
+    margin-top: 80px;
+}
+#last {
+    padding-bottom: 20px;
+}
+nav a {
+    font-size: 1em;
+    padding: 10px 20px;
+    text-align: left;
+    color: #4D4E53;
+}
+.doc {
+    display: flex;
+    flex-direction: column;
+    /* margin-left:310px; */
+    margin: 13px 20px 0 310px;
+    padding: 0px 10px 0 10px;
+}
+.doc header {
+    font-size: 1.8em;
+  font-weight: thin;
+}
+.doc article {
+    margin-left: 15px;
+    font-size: 0.96em;
+}
+.doc li{
+    padding-top: 10px;
+}
+.doc ul,
+.doc p{
+    margin-bottom: 0;
+}
+.cd {
+    background-color: #F7F7F7;
+    border-radius: 5px;
+    width: 95%;
+    margin: 10px;
+    padding: 10px;
+}
+nav a {
+    text-decoration: none;
+    cursor: pointer;
+}
+p,
+code,
+li {
+    color: #4D4E53;
+}
+#intro {
+    margin-top: 1em;
+}
+#reference {
+    margin-bottom: 1em;
+}
+@media (max-width: 990px) {
+    .container {
+        flex-direction: column;
+    }
+    nav {
+        width: 100%;
+        height: 40%;
+        position: absolute;
+       
+        background-color: #FFFFFF;
+    }
+    .doc {
+        margin: 0;
+    }
+    #intro {
+        margin-top: 700px;
+    }
+    #reference {
+        margin-bottom: 10em;
+    }
+    nav header {
+        position: relative;
+        width: 100%;
+        font-size: 4.8em;
+        margin: 10px 0 10px 0;
+    }
+    nav > section {
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        /* margin-top: 270px !important; */
+        /* overflow-y: auto;
+        overflow-x: hidden; */
+        margin-top: 0;
+    }
+    #link {
+        margin-top: 77rem;
+    }
+    #last {
+        padding-bottom: 40px;
+    }
+    nav > section > div{
+        margin-bottom: 10px;
+    }
+    .scroll {
+      padding: 40px 20px 40px 20px; 
+      font-size: 2.5em;
+      font-weight: 520;
+    }
+    .doc {
+        padding: 20px 50px 0 50px;
+        margin: 0 10px 0 10px;
+    }
+    .doc header {
+        font-size: 4.8em;
+    }
+    .doc article {
+margin-left: 30px;
+    }
+    .doc li {
+        margin-left: 90px;
+    }
+    .doc p {
+        margin-top: 30px;
+    }
+}
